@@ -1,5 +1,7 @@
 import ListBooks from './modules/App.js';
-import { DateTime } from './modules/luxon.js';
+// import { DateTime } from './modules/luxon.js';
+// import { DateTime } from "luxon";
+const { DateTime } = require("luxon");
 
 const pDateTime = document.getElementById('dateTime');
 // pDateTime.textContent = "Hello"
