@@ -1,7 +1,5 @@
 import ListBooks from './modules/App.js';
-// import { DateTime } from './modules/luxon.js';
-// import { DateTime } from "luxon";
-const { DateTime } = require("luxon");
+import { DateTime } from './modules/luxon.js';
 
 const pDateTime = document.getElementById('dateTime');
 // pDateTime.textContent = "Hello"
@@ -16,9 +14,12 @@ btnAddBook.addEventListener('click', (event) => {
   const error = document.getElementById('error');
   if (title.value.length === 0 || author.value.length === 0) {
     error.classList.remove('hidden');
+    error.textContent = 'Title and Author should not be empty';
+    error.style.color = 'red';
     event.preventDefault();
   } else {
-    error.classList.add('hidden');
+    error.textContent = 'Sucess';
+    error.style.color = 'Blue';
     listBook.add(title.value, author.value);
     listBook.addto(title.value, author.value);
   }
