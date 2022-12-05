@@ -85,8 +85,8 @@ Clone this repository to your desired folder:
 Example commands:
 --->
 ```sh
-  git clone git@github.com:myaccount/my-project.git
-  cd my-folder
+  git clone https://github.com/Hassaanjbaig-code/Awersome-Book-ES6.git
+  cd Awersome-Book-ES6
 ```
 -
 
@@ -99,7 +99,7 @@ This is not recommad but you can check the linterc error in your local pc
 Example command:
 --->
 ```sh
-  cd my-project
+  cd Awersome-Book-ES6
   npm install --save-dev hint@7.x
 ```
 
