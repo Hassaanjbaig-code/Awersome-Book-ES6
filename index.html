@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Awersome Books</h1>
+        <ul class="navbar">
+          <li id="List">List</li>
+          <li id="AddNew">Add new</li>
+          <li id="Contact">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <p id="dateTime"></p>
+    <section id="list-book">
+      <h2>All awersome books</h2>
+      <ul class="list-book" id="list-book"></ul>
+    </section>
+    <section id="addNew-book" class="hidden">
+      <hr />
+      <form class="form" id="addNewBook">
+        <h2>Add a new book</h2>
+        <input type="text" name="Title" placeholder="Title" id="Title" />
+        <input type="text" name="Author" placeholder="Author" id="Author" />
+        <p class="hidden" id="error"></p>
+        <input type="button" value="Add" id="button" />
+      </form>
+    </section>
+    <section id="Contact-Me" class="contact-me hidden">
+      <h1>Contact Information</h1>
+      <p>
+        Do have any question or you want to say "Hello"? <br />
+        You can reach out to us!
+      </p>
+      <ul>
+        <li>Our e-mail mail@mail.com</li>
+        <li>Our phone number: 0043586534422</li>
+        <li>Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </section>
+
+    <footer>Copy right</footer>
+    <script type="module" src="./index.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>
