@@ -2,7 +2,6 @@ import ListBooks from './modules/App.js';
 import { DateTime } from './modules/luxon.js';
 
 const pDateTime = document.getElementById('dateTime');
-// pDateTime.textContent = "Hello"
 pDateTime.innerText = `Date and Time: ${DateTime.now().toLocaleString(DateTime.DATETIME_MED)}`;
 
 const listBook = new ListBooks();
